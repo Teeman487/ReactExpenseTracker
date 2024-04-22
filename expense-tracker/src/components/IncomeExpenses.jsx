@@ -30,26 +30,6 @@ export const IncomeExpenses = () => {
     amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) *
     -1
   );
-  
-// function Balance(){
- 
-// export const Balance = () => {
-//   const { transactions } = useContext(GlobalContext);
-
-//   const amounts = transactions.map(transaction => transaction.amount);
-
-//   const total = amounts.reduce((acc, item) => (acc += item), 0);
-   
-//   return (
-//     <>
-//       <h4>Your Balance</h4>
-//     <h1>{moneyFormatter(total)}</h1>
-//     <h1>${total}</h1>
-//       </>
-//   )
-// }
-// export default Balance
-
 
   return (
     <div className="inc-exp-container">
